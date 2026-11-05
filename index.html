@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Haleigh Elizabeth: Sadie Scribble (a homepage idea)</title>
+<meta name="description" content="A homepage idea made by Sparsh Saini for Haleigh Elizabeth, author of Sadie Scribble. Not her official site.">
+<meta property="og:title" content="Haleigh Elizabeth: Sadie Scribble (a homepage idea)">
+<meta property="og:description" content="A homepage idea made by Sparsh Saini for Haleigh Elizabeth. Not her official site.">
+<meta property="og:image" content="https://sparshsainied-prog.github.io/haleighelizabeth/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%233c393a'/%3E%3Cpath d='M7 20c3-9 6 4 9-4s5 6 9-2' stroke='%23fbb03c' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Schoolbell&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/cover.jpg" fetchpriority="high">
+<style>
+:root{
+  --ink:#2b2829;          /* pencil and marble black */
+  --marble:#3c393a;
+  --blue:#0357a1;         /* "Sadie" on the cover */
+  --red:#c8413f;          /* "Scribble", deepened for text contrast */
+  --orange:#fbb03c;       /* the LOVE sticker */
+  --teal:#17b6b9;         /* the flower sticker */
+  --rule:#abc5da;         /* the page's blue rules */
+  --margin:#e1aab3;       /* the page's pink margin */
+  --paper:#fffffe;
+  --line:34px;
+  --hand:"Schoolbell","Comic Sans MS",cursive;
+  --brush:"Caveat Brush","Schoolbell",cursive;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:21px/var(--line) var(--hand)}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--blue);text-decoration-thickness:2px;text-underline-offset:4px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--ink);outline-offset:2px;box-shadow:0 0 0 7px #fff;border-radius:6px}
+.skip{position:absolute;left:-999px;top:0;background:#fff;padding:8px 12px;z-index:20}
+.skip:focus{left:12px;top:12px}
+.strip{background:var(--ink);color:#fff;font-size:15px;line-height:20px;text-align:center;padding:9px 16px}
+
+/* ---------- hero: the notebook ---------- */
+.hero{position:relative;height:330vh;height:330svh;background:var(--blue)}
+.stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;color:#fff;
+  display:grid;grid-template-columns:minmax(0,30rem) minmax(0,1fr);grid-template-rows:auto 1fr;column-gap:clamp(24px,5vw,80px);
+  padding:20px clamp(20px,5vw,72px) 0}
+.bar{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:16px;position:relative;z-index:3}
+.label{position:relative;display:inline-flex;align-items:center;height:56px;padding:0 26px;color:var(--blue);text-decoration:none;font:30px/1 var(--brush)}
+.label svg{position:absolute;inset:0;width:100%;height:100%;z-index:-1;overflow:visible}
+.bar nav{display:flex;gap:22px;font-size:20px}
+.bar nav a{color:#fff;text-decoration:none;border-bottom:2px solid rgba(255,255,255,.45);line-height:28px;padding:8px 0}
+.bar nav a:hover{border-color:#fff}
+.copy{align-self:center;max-width:34rem;position:relative;z-index:2;padding-bottom:6vh}
+.copy h1{font:400 clamp(34px,3.6vw,54px)/1.2 var(--hand);margin:0 0 22px;text-wrap:balance}
+.copy p{font-size:22px;line-height:34px;margin:0 0 30px;max-width:30rem}
+.stickers{display:flex;flex-wrap:wrap;gap:14px 18px}
+.sticker{display:inline-block;font:26px/1 var(--brush);color:var(--ink);text-decoration:none;background:var(--orange);
+  padding:13px 22px 12px;border-radius:30px;border:4px solid #fff;box-shadow:0 0 0 2px var(--ink),3px 5px 0 2px rgba(0,0,0,.28);transform:rotate(-2deg)}
+.sticker.teal{background:var(--teal);transform:rotate(1.5deg)}
+.sticker:hover{transform:rotate(0)}
+.bookpos{align-self:center;justify-self:center;position:relative;z-index:1;padding-bottom:4vh}
+.book{position:relative;height:min(78vh,740px,calc((100vw - 30rem - 170px) / .778));aspect-ratio:1000/1285}
+.book .shadow{position:absolute;inset:3% -2% -2% 3%;background:rgba(0,20,60,.35);border-radius:4px 10px 10px 4px}
+.clip{position:absolute;inset:0;overflow:hidden;border-radius:2px 6px 6px 2px;background:#fff}
+.pagebox{position:absolute;left:0;top:0;width:100%;aspect-ratio:873/1128}
+.pagebox>img{position:absolute;left:0;top:0;width:100%}
+.pagebox .rocket{left:11.226%;top:15.16%;width:88.774%;will-change:transform}
+.fmask{position:absolute;left:0;top:0;width:0;height:0;overflow:hidden;transform-origin:0 0;will-change:transform}
+.fmask img{position:absolute;left:0;top:0;transform-origin:0 0;max-width:none;will-change:transform}
+.keep,.pshade,.fm,.crease{position:absolute;left:0;top:0;transform-origin:0 0;will-change:transform}
+.keep,.fm{overflow:hidden}
+.keep img{position:absolute;left:0;top:0;transform-origin:0 0;max-width:none;will-change:transform}
+.pshade{background:linear-gradient(90deg,rgba(30,25,40,.32),rgba(30,25,40,0))}
+.flap{position:absolute;left:0;top:0;width:0;height:0;transform-origin:0 0;will-change:transform,opacity;pointer-events:none}
+.paper{position:absolute;left:0;top:0;overflow:hidden;transform-origin:0 0;will-change:transform;
+  background:#f1f0ee url(img/grain.png);box-shadow:0 0 18px rgba(0,0,0,.25)}
+.crease{background:linear-gradient(90deg,rgba(0,0,0,.2),rgba(0,0,0,0) 70%)}
+
+/* ---------- the printed pages ---------- */
+.ruled{background-color:var(--paper);
+  background-image:linear-gradient(90deg,transparent 0 calc(var(--m) - 2px),var(--margin) calc(var(--m) - 2px) var(--m),transparent var(--m)),
+  repeating-linear-gradient(180deg,transparent 0 calc(var(--line) - 2px),var(--rule) calc(var(--line) - 2px) var(--line));
+  --m:clamp(28px,7vw,96px);padding:calc(var(--line)*2) clamp(20px,5vw,72px) calc(var(--line)*2) calc(var(--m) + clamp(18px,3vw,48px))}
+.wrap{max-width:1080px}
+h2{font:400 clamp(44px,5vw,66px)/calc(var(--line)*2) var(--brush);color:var(--blue);margin:0 0 var(--line)}
+h3{font:400 34px/var(--line) var(--brush);color:var(--red);margin:0 0 var(--line)}
+p{margin:0 0 var(--line);max-width:38rem}
+.price{color:var(--red)}
+.bookrow{display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr);gap:var(--line) 48px;align-items:start;margin-bottom:calc(var(--line)*2)}
+.bookrow img{border-radius:3px;box-shadow:4px 6px 0 rgba(43,40,41,.18)}
+.spread{margin:0 0 calc(var(--line)*2);max-width:900px}
+.spread img{box-shadow:0 2px 0 var(--rule),4px 8px 18px rgba(0,0,0,.12)}
+figcaption{font-size:17px;line-height:var(--line);color:#5a5658}
+.links{display:flex;flex-wrap:wrap;gap:6px 26px}
+.next{border-top:2px dashed var(--rule);padding-top:var(--line);margin-bottom:calc(var(--line)*2)}
+.awards{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:var(--line) 48px;align-items:center}
+.awards img{border:10px solid #fff;box-shadow:0 0 0 1px #ddd,4px 8px 16px rgba(0,0,0,.18)}
+ol.visits{list-style:none;padding:0;margin:0 0 var(--line);max-width:44rem}
+ol.visits li{margin:0 0 var(--line);padding-left:44px;position:relative}
+ol.visits li::before{content:"";position:absolute;left:4px;top:8px;width:22px;height:22px;border:2.5px solid var(--ink);border-radius:46% 54% 50% 50%;transform:rotate(-8deg)}
+ol.visits b{font-weight:400;color:var(--red)}
+blockquote{margin:0 0 var(--line);padding:0;font-size:28px;line-height:var(--line);color:var(--blue);max-width:36rem}
+blockquote p{margin:0 0 var(--line)}
+blockquote cite{display:block;font-style:normal;font-size:18px;color:#5a5658}
+.cta-ink{display:inline-block;font:26px/1 var(--brush);color:#fff;background:var(--blue);text-decoration:none;padding:13px 22px 12px;border-radius:30px;border:4px solid #fff;box-shadow:0 0 0 2px var(--ink),3px 5px 0 2px rgba(0,0,0,.2)}
+
+/* ---------- close: the notebook shuts ---------- */
+.close{background:var(--marble) url(img/marble.jpg) center/cover;padding:96px 20px;display:flex;justify-content:center}
+.closelabel{position:relative;width:min(560px,100%);padding:56px 30px 46px;text-align:center}
+.closelabel svg{position:absolute;inset:0;width:100%;height:100%;z-index:0;overflow:visible}
+.closelabel>*:not(svg){position:relative;z-index:1}
+.closelabel h2{margin:0 0 8px;line-height:1}
+.closelabel h2 span{display:block;color:var(--red)}
+.closelabel p{margin:0 auto 26px;font-size:20px}
+footer{background:var(--ink);color:#fff;font-size:15px;line-height:22px;text-align:center;padding:18px 16px}
+
+@media (max-width:1000px){
+  body{font-size:19px}
+  .hero{height:300svh}
+  .stage{grid-template-columns:1fr;grid-template-rows:auto auto 1fr;padding:14px 16px 0;row-gap:12px}
+  .label{height:46px;font-size:25px;padding:0 20px}
+  .bar nav{gap:16px;font-size:18px}
+  .bar nav .wide{display:none}
+  .bookpos{order:2;justify-self:center;padding:0}
+  .book{height:auto;width:min(78vw,max(170px,calc((100svh - 380px) * .778)),340px)}
+  .copy{order:3;align-self:start;padding:6px 0 0}
+  .copy h1{font-size:25px;line-height:32px;margin:0 0 10px}
+  .copy p{font-size:17px;line-height:25px;margin:0 0 14px}
+  .sticker{font-size:21px;padding:11px 16px 10px}
+  .bookrow,.awards{grid-template-columns:1fr}
+  .bookrow img{max-width:220px}
+  blockquote{font-size:24px}
+  h2{font-size:36px}
+}
+@media (max-width:1000px) and (max-height:700px){ .copy p{display:none} }
+@media (max-width:1000px) and (max-height:520px){
+  .stage{grid-template-columns:auto minmax(0,1fr);grid-template-rows:auto 1fr;column-gap:24px}
+  .bookpos{order:0;align-self:center}
+  .book{width:auto;height:calc(100svh - 100px)}
+  .copy{order:1;align-self:center;padding:0}
+}
+@media (prefers-reduced-motion:reduce){
+  .hero{height:auto}
+  .stage{position:relative;height:auto;min-height:100svh;padding-bottom:40px}
+  .sticker,.sticker.teal{transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#books">Skip to the books</a>
+<div class="strip">A homepage idea made by Sparsh Saini for Haleigh Elizabeth. Not their official site.</div>
+
+<section class="hero" id="top" aria-label="Sadie Scribble">
+  <div class="stage">
+    <header class="bar">
+      <a class="label" href="#top">
+        <svg viewBox="0 0 220 56" preserveAspectRatio="none" aria-hidden="true"><path d="M12 2H208A10 10 0 0 0 218 12V44A10 10 0 0 0 208 54H12A10 10 0 0 0 2 44V12A10 10 0 0 0 12 2Z" fill="#fff" stroke="#2b2829" stroke-width="3" vector-effect="non-scaling-stroke"/></svg>
+        Haleigh Elizabeth
+      </a>
+      <nav aria-label="On this page"><a href="#books">Books</a><a href="#visits">Visits</a><a class="wide" href="#about">About</a></nav>
+    </header>
+
+    <div class="copy">
+      <h1>Now this scribble is for you, to think up all on your own.</h1>
+      <p>Sadie Scribble is a picture book in rhyme about a girl whose pencil brings her imagination to life. Words by Haleigh Elizabeth, art by Izzy B.</p>
+      <div class="stickers">
+        <a class="sticker" href="https://www.noininbooks.com/shop/p/product-1-ydar7-e8mlb-r2y28-etx9g">Get Sadie Scribble</a>
+        <a class="sticker teal" href="https://www.noininbooks.com/interactive-author-visits">Book a school visit</a>
+      </div>
+    </div>
+
+    <div class="bookpos">
+      <div class="book" id="book" role="img" aria-label="The cover of Sadie Scribble, a marbled composition notebook with Sadie peeking out under the label. The cover turns over to the page inside, where Sadie flies a pencil-drawn rocket and the text asks: Could this be a rocket ship, flying into the unknown?">
+        <div class="shadow"></div>
+        <div class="clip">
+          <div class="pagebox" id="pagebox">
+            <img src="img/page.jpg" alt="" width="873" height="1128">
+            <div class="fmask" id="fmask"><img id="flames" src="img/flames.webp" alt="" width="293" height="385"></div>
+            <img class="rocket" id="rocket" src="img/rocket.webp" alt="" width="775" height="758">
+          </div>
+          <div class="pshade" id="pshade"></div>
+          <div class="keep" id="keep"><img id="cov" src="img/cover.jpg" alt="" width="1000" height="1285" fetchpriority="high"></div>
+        </div>
+        <div class="flap" id="flap"><div class="fm" id="fm"><div class="paper" id="paper"><div class="crease" id="crease"></div></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main>
+<section class="ruled" id="books">
+  <div class="wrap">
+    <h2>What will she draw next?</h2>
+    <div class="bookrow">
+      <img src="img/cover-sm.jpg" alt="Sadie Scribble cover" width="480" height="617" loading="lazy">
+      <div>
+        <h3>Sadie Scribble: Book 1</h3>
+        <p>Sadie makes a scribble, and each turn of the page shows what it becomes. A rocket ship. A unicorn, with Sadie in a crown on its back. The rhymes keep you guessing, and the last scribble is left for the reader to finish.</p>
+        <p><span class="price">$18.99</span>, or <span class="price">$35</span> as a bundle with a Sadie plush.</p>
+        <div class="links">
+          <a href="https://www.noininbooks.com/shop/p/product-1-ydar7-e8mlb-r2y28-etx9g">Buy the book</a>
+          <a href="https://www.noininbooks.com/shop/p/sadie-scribbles-book-bundle">Buy the bundle</a>
+        </div>
+      </div>
+    </div>
+
+    <figure class="spread">
+      <img src="img/unicorn-spread.jpg" alt="A spread from Sadie Scribble: one long pencil line loops across the lined page into a unicorn, with Sadie in a crown riding it. The text reads: With your imagination, there's no limits here at all!" width="1400" height="904" loading="lazy">
+      <figcaption>Inside Sadie Scribble. Art by Izzy B.</figcaption>
+    </figure>
+
+    <div class="next">
+      <h3>Next: Sadie Scribble Wants a Pet</h3>
+      <p>Book 2 went to Kickstarter from 13 to 31 October 2026, with an activity journal and plush dolls of Sadie and Doodle.</p>
+      <a href="https://www.kickstarter.com/projects/scribble/sadie-scribble-series-expansion">See the campaign</a>
+    </div>
+
+    <div class="bookrow">
+      <img src="img/planets.jpg" alt="If the Planets Could Speak cover: a tearful Earth among worried planets in a starry sky" width="600" height="629" loading="lazy">
+      <div>
+        <h3>If the Planets Could Speak</h3>
+        <p>"Today should have been an ordinary day in space… but it wasn't."</p>
+        <p>The planets have a problem none of them can fix alone. Book 1 of Space for Learning, a series that brings big STEM ideas to young readers. Art by Nejla Shojaie.</p>
+        <p><span class="price">$18.95</span>. <a href="https://www.noininbooks.com/shop/p/if-the-planets-could-speak-space-for-learning-book-1">Order it</a></p>
+      </div>
+    </div>
+
+    <div class="awards">
+      <img src="img/awards.jpg" alt="The Sadie Scribble plush doll sitting between two Writely Literary Awards trophies" width="1100" height="891" loading="lazy">
+      <div>
+        <h3>Two trophies</h3>
+        <p>Sadie Scribble won two Writely Literary Awards: Best Use of Rhyme, and Best Cover Design for ages 4 to 9.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ruled" id="visits">
+  <div class="wrap">
+    <h2>Bring Sadie to your class</h2>
+    <p>Haleigh was a classroom teacher before she wrote Sadie. Her visits mix read-alouds, hands-on STEM activities and a lot of questions, for schools, libraries and community groups.</p>
+    <ol class="visits">
+      <li><b>Classroom readings.</b> About 20 minutes in each class on the day.</li>
+      <li><b>Grade level assembly.</b> A reading and a short talk for a big group, about 45 minutes.</li>
+      <li><b>Writing workshop.</b> Small groups take one idea and build it into a story map, about 30 minutes each.</li>
+      <li><b>Literacy night.</b> An evening for families on helping with reading at home. It pairs with any of the others.</li>
+    </ol>
+    <blockquote>
+      <p>"They loved the scribble part and making it into something real!"</p>
+      <cite>From a school's feedback after a visit</cite>
+    </blockquote>
+    <a class="cta-ink" href="https://www.noininbooks.com/interactive-author-visits">Ask about a visit</a>
+  </div>
+</section>
+
+<section class="ruled" id="about">
+  <div class="wrap">
+    <h2>Hi, I'm Haleigh</h2>
+    <p>I'm a former teacher and a mum of three boys. Their questions, their adventures and their unpredictable moments are where my stories start, and I publish them myself through Noinin Books.</p>
+    <blockquote>
+      <p>"While I may have left the classroom, I never really stopped being a teacher. I simply found a new way to teach: one story at a time."</p>
+    </blockquote>
+    <div class="links">
+      <a href="https://www.instagram.com/space_for_learning_big_ideas/">Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=61563836211858">Facebook</a>
+      <a href="https://www.noininbooks.com/shop">The shop</a>
+    </div>
+  </div>
+</section>
+
+<section class="close" aria-label="Get the book">
+  <div class="closelabel">
+    <svg viewBox="0 0 560 300" preserveAspectRatio="none" aria-hidden="true"><path d="M24 30H200C214 30 222 6 280 6S346 30 360 30H536A22 22 0 0 0 558 52V250A22 22 0 0 0 536 272H360C346 272 338 294 280 294S214 272 200 272H24A22 22 0 0 0 2 250V52A22 22 0 0 0 24 30Z" fill="#fff" stroke="#2b2829" stroke-width="5" vector-effect="non-scaling-stroke"/></svg>
+    <h2>Sadie <span>Scribble</span></h2>
+    <p>by Haleigh Elizabeth, art by Izzy B</p>
+    <a class="sticker" href="https://www.noininbooks.com/shop/p/product-1-ydar7-e8mlb-r2y28-etx9g">Get Sadie Scribble</a>
+  </div>
+</section>
+</main>
+
+<footer>A mockup made by Sparsh Saini for Haleigh Elizabeth. Not affiliated, not live. Cover and interior art by Izzy B; If the Planets Could Speak art by Nejla Shojaie.</footer>
+
+<script>
+(() => {
+  const hero = document.querySelector('.hero'), book = document.getElementById('book');
+  const keep = document.getElementById('keep'), cov = document.getElementById('cov'), pshade = document.getElementById('pshade');
+  const flap = document.getElementById('flap'), fm = document.getElementById('fm'), paper = document.getElementById('paper'), crease = document.getElementById('crease');
+  const rocket = document.getElementById('rocket'), fmask = document.getElementById('fmask'), flames = document.getElementById('flames');
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)');
+  const UX = 0.773, UY = -0.635, TH = Math.atan2(UY, UX);   // the rocket's own axis on the page
+  let W, H, L, nx, ny, phi, dMax, s, T, top0 = 0, span = 1, last = -1;
+  const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
+  const seg = (p, a, b) => clamp((p - a) / (b - a), 0, 1);
+  const ease = t => t < .5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+  const out3 = t => 1 - Math.pow(1 - t, 3);
+  const px = v => v.toFixed(2) + 'px', rad = v => v.toFixed(5) + 'rad';
+
+  function measure() {
+    W = book.clientWidth; H = book.clientHeight; L = 3 * Math.max(W, H);
+    top0 = hero.getBoundingClientRect().top + scrollY; span = hero.offsetHeight - innerHeight;
+    // fold runs along the cover's own painted curl: from 77% along the bottom edge to 69% down the right edge
+    const vx = 0.23 * W, vy = -0.31 * H, len = Math.hypot(vx, vy);
+    nx = -vy / len; ny = vx / len; phi = Math.atan2(ny, nx);
+    dMax = nx * W + ny * H + 2;
+    s = W / 873; T = 1250 * s;
+    cov.style.width = W + 'px'; cov.style.height = H + 'px';
+    paper.style.width = W + 'px'; paper.style.height = H + 'px';
+    for (const el of [keep, fm]) { el.style.width = L + 'px'; el.style.height = 2 * L + 'px'; }
+    pshade.style.width = 0.16 * W + 'px'; pshade.style.height = 2 * L + 'px';
+    crease.style.width = 0.2 * W + 'px'; crease.style.height = 2 * L + 'px';
+    fmask.style.width = (L + 16 * s) + 'px'; fmask.style.height = 2 * L + 'px';
+    flames.style.width = 293 * s + 'px';
+    last = -1; frame();
+  }
+
+  function progress() {
+    if (reduce.matches) return 1;
+    return span > 0 ? clamp((scrollY - top0) / span, 0, 1) : 1;
+  }
+
+  function frame() {
+    const p = progress();
+    if (Math.abs(p - last) < 0.0004) return; last = p;
+    // 1. the cover turns over from its painted corner
+    const tp = ease(seg(p, 0.04, 0.56));
+    const d = dMax + (-8 - dMax) * tp;
+    keep.style.transform = `rotate(${rad(phi)}) translate(${px(d - L)},${px(-L)})`;
+    cov.style.transform = `translate(${px(L - d)},${px(L)}) rotate(${rad(-phi)})`;
+    pshade.style.transform = `rotate(${rad(phi)}) translate(${px(d)},${px(-L)})`;
+    pshade.style.opacity = tp > 0.97 ? 0 : 1;
+    const a = 1 - 2 * nx * nx, b = -2 * nx * ny, dd = 1 - 2 * ny * ny;
+    flap.style.transform = `matrix(${a.toFixed(5)},${b.toFixed(5)},${b.toFixed(5)},${dd.toFixed(5)},${(2 * d * nx).toFixed(2)},${(2 * d * ny).toFixed(2)})`;
+    flap.style.opacity = (1 - seg(tp, 0.62, 0.86)).toFixed(3);
+    fm.style.transform = `rotate(${rad(phi)}) translate(${px(d)},${px(-L)})`;
+    paper.style.transform = `translate(${px(-d)},${px(L)}) rotate(${rad(-phi)})`;
+    crease.style.transform = `rotate(${rad(phi)}) translate(${px(d)},${px(-L)})`;
+    // 2. the rocket rides in on its own trail; the flames show only behind its nozzle
+    const e = out3(seg(p, 0.5, 0.9)), back = (1 - e) * T;
+    rocket.style.transform = `translate(${px(-back * UX)},${px(-back * UY)})`;
+    const tx = 260 * s - back * UX, ty = 742 * s - back * UY, Lm = L;
+    fmask.style.transform = `translate(${px(tx)},${px(ty)}) rotate(${rad(TH)}) translate(${px(-Lm)},${px(-Lm)})`;
+    flames.style.transform = `translate(${px(Lm)},${px(Lm)}) rotate(${rad(-TH)}) translate(${px(-tx)},${px(677 * s - ty)})`;
+  }
+
+  let ticking = false;
+  addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(() => { ticking = false; frame(); }); } }, { passive: true });
+  addEventListener('resize', measure);
+  reduce.addEventListener('change', measure);
+  if (document.readyState === 'complete') measure(); else addEventListener('load', measure);
+  measure();
+})();
+</script>
+</body>
+</html>
